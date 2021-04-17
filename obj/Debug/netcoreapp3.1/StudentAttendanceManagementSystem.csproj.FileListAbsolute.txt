@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\obj\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.csprojAssemblyReference.cache
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\obj\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\obj\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.AssemblyInfo.cs
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\obj\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\bin\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.exe
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\bin\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.deps.json
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\bin\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.runtimeconfig.json
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\bin\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.runtimeconfig.dev.json
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\bin\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.dll
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\bin\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.pdb
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\obj\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.dll
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\obj\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.pdb
+C:\Users\user\source\repos\StudentAttendanceManagementSystem\obj\Debug\netcoreapp3.1\StudentAttendanceManagementSystem.genruntimeconfig.cache
