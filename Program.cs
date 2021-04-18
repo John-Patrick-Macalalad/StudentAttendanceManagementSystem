@@ -10,9 +10,9 @@ namespace StudentAttendanceManagementSystem
         Start:
             Console.Clear();
 
-            Console.WriteLine("==========================================");
-            Console.WriteLine("LOG IN");
-            Console.WriteLine("==========================================");
+            Console.WriteLine("|==========================================|");
+            Console.WriteLine("|                 LOG IN                   |");
+            Console.WriteLine("|==========================================|");
 
             string user, pass;
             Console.WriteLine("Enter your username: ");
@@ -21,9 +21,9 @@ namespace StudentAttendanceManagementSystem
             pass = Convert.ToString(Console.ReadLine());
             if (user == "admin" && pass == "12345")
             {
-                Console.WriteLine("==========================================");
-                Console.WriteLine("Logged in Succesfully");
-                Console.WriteLine("==========================================");
+                Console.WriteLine("|==========================================|");
+                Console.WriteLine("|           Logged in Succesfully          |");
+                Console.WriteLine("|==========================================|");
                 Console.WriteLine("");
                 Console.WriteLine("Press Enter again to go the Menu. ");
             }
@@ -44,13 +44,13 @@ namespace StudentAttendanceManagementSystem
         static void MainMenu()
         {
             Console.Clear();
-            Console.WriteLine("==========================================");
-            Console.WriteLine("The Main Menu");
-            Console.WriteLine("==========================================");
+            Console.WriteLine("|==========================================|");
+            Console.WriteLine("|               The Main Menu              |");
+            Console.WriteLine("|==========================================|");
             Console.WriteLine("Please type the specific number to enter.");
             Console.WriteLine("");
             Console.WriteLine("1. Add Student");
-            Console.WriteLine("2. Add Classroom");
+            Console.WriteLine("2. Add Class");
             Console.WriteLine("3. Add Staff");
             Console.WriteLine("4. Exit");
 
@@ -63,7 +63,7 @@ namespace StudentAttendanceManagementSystem
                     AddStud();
                     break;
                 case "2":
-                    AddCRoom();
+                    AddClass();
                     break;
                 case "3":
                     AddStaff();
@@ -86,9 +86,9 @@ namespace StudentAttendanceManagementSystem
             
             int n;
             Console.WriteLine("");
-            Console.WriteLine("==========================================");
-            Console.WriteLine("ADD  A STUDENT");
-            Console.WriteLine("==========================================");
+            Console.WriteLine("|==========================================|");
+            Console.WriteLine("|              ADD  A STUDENT              |");
+            Console.WriteLine("|==========================================|");
             Console.WriteLine("How many students that you want to add? ");
             n = int.Parse(Console.ReadLine());
 
@@ -103,9 +103,9 @@ namespace StudentAttendanceManagementSystem
             }
 
             Console.WriteLine("");
-            Console.WriteLine("==========================================");
-            Console.WriteLine("Successfully Added!!!");
-            Console.WriteLine("==========================================");
+            Console.WriteLine("|==========================================|");
+            Console.WriteLine("|           Successfully Added!!!          |");
+            Console.WriteLine("|==========================================|");
 
             for (int j = 0; j < n; j++)
             {
@@ -118,36 +118,36 @@ namespace StudentAttendanceManagementSystem
             Console.ReadLine();
 
         }
-        static void AddCRoom()
+        static void AddClass()
         {
-            string[] studCR = new string[20];
+            string[] studClass = new string[20];
 
             int n;
             Console.WriteLine("");
-            Console.WriteLine("==========================================");
-            Console.WriteLine("ADD  A CLASSROOM");
-            Console.WriteLine("==========================================");
+            Console.WriteLine("|==========================================|");
+            Console.WriteLine("|               ADD  A CLASS               |");
+            Console.WriteLine("|==========================================|");
             
-            Console.WriteLine("How many Classroom you wan to add? ");
+            Console.WriteLine("How many Class you wan to add? ");
             n = int.Parse(Console.ReadLine());
 
             for (int c = 0; c < n; c++)
             {
                 Console.WriteLine("");
-                Console.WriteLine("Enter Classroom Name");
-                studCR[c] = Console.ReadLine();
+                Console.WriteLine("Enter Class Name");
+                studClass[c] = Console.ReadLine();
             }
 
             Console.WriteLine("");
-            Console.WriteLine("==========================================");
-            Console.WriteLine("Succesfully Added!!!");
-            Console.WriteLine("==========================================");
+            Console.WriteLine("|==========================================|");
+            Console.WriteLine("|            Succesfully Added!!!          |");
+            Console.WriteLine("|==========================================|");
 
 
-            for (int r = 0; r < n; r++)
+            for (int s = 0; s < n; s++)
             {
                 
-                Console.WriteLine("The Classroom Name is: " + studCR[r]);
+                Console.WriteLine("The Class Name is: " + studClass[s]);
                 
             }
 
@@ -159,9 +159,9 @@ namespace StudentAttendanceManagementSystem
 
             int n;
             Console.WriteLine("");
-            Console.WriteLine("==========================================");
-            Console.WriteLine("ADD A STAFF");
-            Console.WriteLine("==========================================");
+            Console.WriteLine("|==========================================|");
+            Console.WriteLine("|                ADD A STAFF               |");
+            Console.WriteLine("|==========================================|");
 
             Console.WriteLine("How many staff you want to add? ");
             n = int.Parse(Console.ReadLine());
@@ -173,9 +173,9 @@ namespace StudentAttendanceManagementSystem
             }
 
             Console.WriteLine("");
-            Console.WriteLine("==========================================");
-            Console.WriteLine("Successfully Added!!!");
-            Console.WriteLine("==========================================");
+            Console.WriteLine("|==========================================|");
+            Console.WriteLine("|             Successfully Added!!!        |");
+            Console.WriteLine("|==========================================|");
 
             for (int t = 0; t < n; t++)
             {
