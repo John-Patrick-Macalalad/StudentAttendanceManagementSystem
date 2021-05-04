@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace StudentAttendanceManagementSystem
 {
@@ -52,7 +53,8 @@ namespace StudentAttendanceManagementSystem
             Console.WriteLine("1. Add Student");
             Console.WriteLine("2. Add Class");
             Console.WriteLine("3. Add Staff");
-            Console.WriteLine("4. Exit");
+            Console.WriteLine("4. View Student Enrolled");
+            Console.WriteLine("5. Exit");
 
             string myoptions;
             myoptions = Console.ReadLine();
@@ -69,6 +71,9 @@ namespace StudentAttendanceManagementSystem
                     AddStaff();
                     break;
                 case "4":
+                    ViewEnrolled();
+                    break;
+                case "5":
                     Exit();
                     break;
 
@@ -128,13 +133,13 @@ namespace StudentAttendanceManagementSystem
             Console.WriteLine("|               ADD  A CLASS               |");
             Console.WriteLine("|==========================================|");
             
-            Console.WriteLine("How many Class you wan to add? ");
+            Console.WriteLine("How many Class you want to add? ");
             n = int.Parse(Console.ReadLine());
 
             for (int c = 0; c < n; c++)
             {
                 Console.WriteLine("");
-                Console.WriteLine("Enter Class Name");
+                Console.WriteLine("Enter Class Name: ");
                 studClass[c] = Console.ReadLine();
             }
 
@@ -168,7 +173,7 @@ namespace StudentAttendanceManagementSystem
 
             for (int s = 0; s < n; s++)
             {
-                Console.WriteLine("Enter Staff Name.");
+                Console.WriteLine("Enter Staff Name: ");
                 staffName[s] = Console.ReadLine();
             }
 
@@ -183,6 +188,32 @@ namespace StudentAttendanceManagementSystem
                 Console.WriteLine("Staff Name added is: " + staffName[t]);
             }
 
+            Console.ReadLine();
+        }
+
+        static void ViewEnrolled()
+        {
+            List<string> viewStud = new List<string>();
+
+            Console.WriteLine("");
+            Console.WriteLine("|==========================================|");
+            Console.WriteLine("|             STUDENTS ENROLLED            |");
+            Console.WriteLine("|==========================================|");
+
+            viewStud.Add("1. Adrian Alejandre");
+            viewStud.Add("2. Angela Cabaroc");
+            viewStud.Add("3. Angeliko Centeno");
+            viewStud.Add("4. Franz Maaba");
+            viewStud.Add("5. James Darel Advincula");
+            viewStud.Add("6. John Patrick Macalalad");
+            viewStud.Add("7. Kian Magdamit");
+            viewStud.Add("8. Kristian Paul Enore");
+
+            foreach (string student in viewStud)
+            {
+                Console.WriteLine( student );
+                
+            }
             Console.ReadLine();
         }
         static void Exit()
